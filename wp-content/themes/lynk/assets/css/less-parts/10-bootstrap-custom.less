@@ -1,0 +1,273 @@
+/*------------------------------------------------------------------
+[Bootstrap-fix]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	05/24/17 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Bootstrap fix
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Top bar header
+1.1 Nav-top
+2. Left Sidebar header
+3. Middle content header
+4. Pages
+5. General-elements
+6. Grid framwork
+7. Breadcrumb
+8. Tooltip
+
+*/
+
+
+
+/*------1. Top bar header------*/
+.navbar-static-top{
+	padding: 0px;
+	border-width:0;
+	.dropdown-toggle::after{
+		display: none;
+	}
+}
+.mega-dropdown{
+	.mega-dropdown-menu{
+		> li{
+			float:left;
+			width:100%;
+		}
+	}
+}
+
+/*------1-1. Left Sidebar header------*/
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+}
+
+/*------2. Left Sidebar header------*/
+ul.jvbpd-nav{
+	display: block;
+	transition: 0.2 easy-out;
+	.nav{
+		flex-direction:column;
+	}
+}
+
+/*------3. Middle content header------*/
+
+a.btn:not([href]):not([tabindex]){
+	color:@white;
+	font-size:14px;
+	cursor: pointer;
+}
+.btn{
+	font-size:14px;
+	padding: .8rem 1.2rem;
+}
+a.btn-default:not([href]):not([tabindex]){
+	color:@bodytext;
+}
+.btn-group.show{
+	display: inline-block!important;
+}
+.btn-lg{
+	padding: 10px 16px;
+	font-size: 18px
+}
+.btn-sm{
+	padding: 5px 10px;
+	font-size: 12px
+}
+.btn-xs{
+	padding: 1px 8px;
+	font-size: 11px
+}
+.btn-circle{
+	padding: 6px 0;
+}
+.btn-group-justified {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: separate;
+	.btn, .btn-group {
+		display: table-cell;
+		float: none;
+		width: 1%;
+	}
+}
+
+/*------4. Pages------*/
+
+/*------5. General-elements------*/
+span.caret{
+	display: none;
+}
+.list-inline > li{
+	display: inline-block;
+}
+.modal-header{
+	display: block;
+	.modal-title{
+		margin-top: 0px;
+	}
+}
+.tooltip, .popover, .popover-title{
+	font-family: @basefont1;
+	font-size:13px;
+}
+.popover-title{
+	margin-top: 0px;
+}
+.custom-select{
+	height: calc(2.25rem + 2px);
+}
+.fileinput .form-control{
+	width: 100%;
+	position: relative;
+}
+.fileinput-new .input-group-addon{
+	position: absolute;
+	right: 3px;
+	top:3px;
+	z-index: 10!important;
+}
+.input-group-addon{
+	padding: 6px 12px;
+	font-size:14px;
+}
+.custom-control{
+	padding-left: 20px;
+}
+.custom-control-indicator{
+	width: 15px;
+	height: 15px;
+}
+.custom-file{
+	height: 30px;
+	width: 100%;
+	.custom-file-control{
+		height: 35px;
+		&::before{
+			height: 35px;
+		}
+	}
+}
+select.form-control:not([size]):not([multiple]){
+	height: calc(1.85rem + 2px);
+}
+.datepicker td, .datepicker th, .table-condensed td, .table-condensed th{
+	padding:5px;
+}
+.note-popover{
+	display: none;
+}
+.note-editor{
+	border: 0px;
+}
+[type=reset], [type=submit], button, html [type=button]{
+	-webkit-appearance:none;
+}
+.modal-backdrop.in{
+	opacity: 0.5;
+}
+a.fc-event:not([href]):not([tabindex]){
+	color:@white;
+}
+.dataTables_wrapper{
+	display: block;
+	label{
+		display: inline-block;
+	}
+}
+/*------6. Grid framwork------*/
+@media (min-width: 992px){
+	.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+		float: left;
+	}
+}
+
+.alert {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: @radius;
+}
+
+.alert-danger{
+	background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+/*------7. Breadcrumb------*/
+.breadcrumb{
+	background-color:transparent;
+	padding:0;
+	margin:0;
+	font-size:12px;
+	li{
+		font-size:@font-size;
+	}
+	a{
+		color:#adadad;
+		&:hover{
+			color:#454545;
+		}
+	}
+}
+
+/*------8. Tooltip------*/
+a[data-jvbpd-tooltip]{
+	display:inline-block;
+}
+.tooltip.show{ opacity:1; min-width:500px; }
+.tooltip-inner{
+	&:before{
+		top: 0;
+		left: 50%;
+		margin-left: -5px;
+		content: "";
+		border-width: 0 5px 5px;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-color: transparent;
+		border-style: solid;
+		border-bottom-color: #ffffff;
+	}
+	background-color:transparent;
+	min-width:500px;
+
+	text-align:left;
+	padding:5px 0;
+	opacity:1;
+	color:#000000;
+	.tooltip-wrap{
+		box-shadow:0px 0px 20px 5px rgba(0,0,0,0.4);
+		background-color:#ffffff;
+	}
+	.tooltip-body > h3.tooltip-title{
+		color:@inverse;
+		font-size:18px;
+		font-weight:400;
+		padding:10px;
+		margin:0;
+	}
+	.tooltip-body > p{
+		line-height:1.50;
+		letter-spacing:1px;
+		font-weight:300;
+		padding:0 10px;
+		color:@bodytext;
+	}
+	.tooltip-footer{
+		font-size:12px;
+		background-color:@inverse;
+		color:white;
+		padding:10px;
+	}
+}

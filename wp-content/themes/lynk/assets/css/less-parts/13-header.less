@@ -1,0 +1,177 @@
+/*------------------------------------------------------------------
+[09. Header Stylesheet]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Header Style
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+*/
+
+.navbar-default{
+	.navbar-header{
+		.header-content-wrapper{
+			&.pull-left{
+				li{
+					& > a.dashboard-sidebar-switcher{
+						&:hover,
+						&:focus{
+							background-color:transparent;
+						}
+						i{
+							vertical-align:middle;
+							font-size:17px;
+							.sidebar-closed&:before{
+								content:"\e051";
+							}
+						}
+					}
+					&.active,
+					&.current-menu-ancestor,
+					&.current-menu-parent,
+					&.current-menu-item{ /** This is for mostly nav top style */
+						background-color:transparent;
+						&> a > span.menu-titles {color:@primary;}
+					}
+				}
+			}// .header-content-wrapper.pull-left
+			&.pull-right{
+				.dropdown,
+				.overlay-sidebar-opener{
+					i{
+						vertical-align:middle;
+						font-size:17px;
+					}
+					&.si-icons{
+						&:hover,
+						&:focus{
+							background-color:transparent;
+						}
+						span.si-icon{
+							margin:0;
+							width:30px;
+							height:30px;
+						}
+					}
+				}
+				.dropdown{
+					&.btn-group{
+						padding: 1.3rem 1.1rem;
+						button{
+							    height: 100%;
+							    padding: 0.6rem 1.2rem;
+							    text-transform: uppercase;
+							    max-height:32px;
+							    span{vertical-align:middle;}
+						}
+					}
+					.header-userinfo{
+						padding:0 11px;
+						img{
+							margin-right:0;
+							width:20px;
+							height:20px;
+						}
+					}
+				}
+			}// .header-content-wrapper.pull-right
+		}
+	}
+}// .navbar-default
+
+
+/************************ Admin ***************************/
+/** WP ADMIN BAR **/
+div.vertical-sidebar > div.sidebar-nav > ulul.jvbpd-nav,
+ul.dropdown-userinfo{
+	a {.top-nav-main; }
+	.adminbar-wrap {
+		background-image: url(@{themeurl}/assets/images/bg-my-menu.png);
+		background-repeat:no-repeat;
+		background-position:bottom right;
+	}
+	.adminbar-wrap<div<div<ul<li:not(#wp-admin-bar-my-account){ background:red; }
+	.wp-admin-bar-my-account-media {display:none;}
+	ul{
+		padding:0;
+		&#wp-admin-bar-root-default{
+			display:none;
+		}
+		li{ list-style-type:none;
+			&#wp-admin-bar-search,
+			&#wp-admin-bar-bp-notifications,
+			&#wp-admin-bar-cs-explain,
+			&#wp-admin-bar-debug-bar{
+				display:none;
+			}
+			&#wp-admin-bar-my-account{
+				& > a.ab-item{ display:none; }
+				ul{
+					margin:0;
+					padding:0;
+					&#wp-admin-bar-user-actions{
+						display:block;
+						padding: 20px 10px 8px 20px;
+						border-bottom:1px solid @bp-border-color;
+						img {border-radius: 50%;}
+					}
+					&#wp-admin-bar-my-account-buddypress, 
+					&#wp-admin-bar-my-account-default{
+						& > li{
+							a.ab-item {
+								display:block;
+								width:100%;
+								padding:8px 25px;
+								border-bottom:1px solid @bp-border-color;
+							}
+							div.ab-sub-wrapper{
+								width:260px;
+								ul{
+									display:none;
+								}
+							}
+							&:hover{
+								background:rgba(232, 238, 243, 0.55);
+								div.ab-sub-wrapper ul{
+									display:block;
+									margin-top:-36px;
+									left:-220px;
+									width:220px;
+									background: @bp-bg;
+									border:1px solid @bp-border-color;
+									position: absolute;
+									color: #fff;
+								}
+							}
+						}
+						span.count {
+							background:@primary;
+							color:@white;
+							display: inline;
+							padding: 2px 5px;
+							font-size: 10px;
+							font-weight: 700;
+							-moz-border-radius: 10px;
+							-khtml-border-radius: 10px;
+							-webkit-border-radius: 10px;
+							border-radius: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.dropdown-menu.dropdown-userinfo {
+	.card.listing-card.narrow {
+		overflow:visible;
+		.list-group-item {
+			padding:0;
+		}
+	}
+}

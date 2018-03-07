@@ -1,0 +1,111 @@
+<wpml-config>
+	<admin-texts>
+		<key name="jvbpd_themes_settings">
+			<key name="footer_info_text_title"/>
+			<key name="footer_text"/>
+			<key name="footer_info_image_title"/>
+			<key name="footer_info_image_url"/>
+			<key name="footer_background_image_url"/>
+			<key name="copyright"/>
+			<key name="address"/>
+			<key name="phone"/>
+			<key name="mobile"/>
+			<key name="fax"/>
+			<key name="email"/>
+			<key name="working_hours"/>
+			<key name="additional_info"/>
+		</key>
+	</admin-texts>
+	<shortcodes>
+
+		<shortcode>
+			<tag>jvbpd_block1</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_block3</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_block7</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_block8</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_block10</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_block11</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_block12</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_block16</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_big_grid1</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_big_grid3</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_bp_active_member_list</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_bp_group_list</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>jvbpd_bp_member_list</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+
+	</shortcodes>
+</wpml-config>

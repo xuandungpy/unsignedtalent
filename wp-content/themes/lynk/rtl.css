@@ -1,0 +1,98 @@
+.uvc-main-heading  {
+	text-align:center !important;
+}
+* {
+	direction:rtl;
+	letter-spacing:0px !important;
+	font-family: 'yekan';
+}
+h1 , h2 , h3 {
+	font-family:'titr' !important;
+}
+.uvc-main-heading h2 , .uvc-sub-heading {
+	text-align:center !important;
+}
+
+.jv-my-page .container .jv-my-page-user-name {
+	padding : 20px 40px 20px 0;
+}
+body.javo-dashboard .jv-my-page .top-row.container >.col-md-12 .profile-and-image-container .nav-tabs {
+	letter-spacing:0px;
+}
+@media (min-width: 992px) {
+	.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+		float:right;
+	}
+	
+} 
+@media (max-width: 991px) and (min-width: 320px) {
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	float:right;
+}
+	
+}
+body.javo-dashboard .jv-my-page .second-container-content .jv-mypage-home .panel-body .nav-tabs, .javo-maps-search-wrap .row .javo-map-box-title
+, .page-header {
+	letter-spacing:0px !important;
+}
+.nav-tabs>li {
+	float:right;
+}
+.upb_row_bg {
+	text-align:right !important;
+}
+.widget_top_menu , .btn{
+	letter-spacing:0px !important;
+}
+.vc_tta-icon {
+	float:right;
+}
+.vc_tta-title-text {
+	margin-right:15px;
+}
+body.single article.post section.jv-single-post-contents .entry-content > p:first-child:first-letter,
+ body.single article.page section.jv-single-post-contents .entry-content > p:first-child:first-letter {
+	float:right;
+}
+.ult_price_action_button {
+	margin-right:10px;
+}
+.jv-welcome-wrap {
+	float:right;
+}
+.navbar-header button {
+	color:black;
+}
+.vc_column-inner  {
+	padding-top:0px !important;
+}
+.copyright-ab {
+	color:#dbdbdb;
+	text-align:left !important;
+	margin: 0 0 0 10px;
+	padding:10px;
+	font-size:1.2em;
+}
+.copyright-ab a {
+	color:#dbdbdb;
+	transition: color 1s ease;
+}
+.copyright-ab a:hover {
+	color:#ee4b28;
+}
+#header-one-line .javo-main-navbar .container .container-fluid #javo-navibar ul.navbar-left .menu-item a,
+ #header-one-line .javo-main-navbar .container .container-fluid #javo-navibar ul.navbar-right .menu-item a {
+	text-align:right;
+	margin-right:-10px;
+}
+#javo-navibar {
+	direction:ltr;
+}
+.btn , .btn-primary , .admin-color-setting , .btn-block , .javo-my-position i,.tg-item-overlay .tg-icon-link , .pracia .tg-link-button , .pracia .tg-media-button , .tg-item-inner i, .tg-item-inner {
+	text-align:center !important;
+}
+.javo-maps-search-wrap .javo-my-position-geoloc .col-md-10 .noUi-horizontal .noUi-background .noUi-handle .javo-slider-tooltip {
+	left:0;
+}
+
+body.rtl.single-lv_listing .single-item-tab-feature-bg-wrap .javo-core-single-featured-container> div{right:auto;}

@@ -1,0 +1,241 @@
+/*------------------------------------------------------------------
+[04. Sidebar-nav]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/28/17 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	custom
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+1. Type b header
+	1-1. Single Post
+	1-2. Archive
+2. Type b contents
+*/
+
+/*------------------------------------------------------------------
+[1. Type b header]
+*/
+html body.jvbpd-single-post-type-jvd-lp #page-style #content-page-wrapper{background:@white;}
+
+.jvbpd-single-post-type-jvd-lk{}
+.jvbpd-single-post-type-jvd-lp{
+	.jvbpd-header{
+		background:#f8f8f9;
+		padding:50px 0;
+		text-align:center;
+		margin-bottom:50px;
+		h1{
+			font-weight:500;
+			font-size:34px;
+			line-height:44px;
+			margin: 10px 0 15px;
+			letter-spacing: 0;
+		}
+	}
+
+	.jvbpd-breadcrumb{color:#aaa;}
+	/*------------------------------------------------------------------
+	[1-1. Single Post]
+	*/
+	.single-post& {
+		.jvbpd-header{margin-bottom:40px;}
+		.main-content-wrap{padding-right:50px; flex:0 0 70%;}
+		.jv-single-post-contents{
+			margin-bottom:50px;
+			.entry-content>p{
+				margin-bottom:10px;
+				a, a:hover{color:#1ebbf0;}
+			}
+		}
+		.sidebar-right,
+		.sidebar-left{flex:0 0 30%; max-width:30%;}
+		.sidebar-right{border-left:1px solid rgba(173,176,182,0.3); padding-left:50px;}
+		.sidebar-left{border-right:1px solid rgba(173,176,182,0.3); padding-right:50px;}
+		.jv-single-post-footer .jv-single-post-meta-wrap{
+			text-align:center;
+			margin-bottom:10px;
+			span{
+				position:relative;
+				padding-right:6px !important;
+				margin-right:5px;
+				line-height:25px;
+			}
+			>span:after{
+				position: absolute;
+				right: 0;
+				bottom:50%;
+				width: 3px;
+				height: 3px;
+				content: "";
+				-webkit-border-radius: 50%;
+				border-radius: 50%;
+				background:#aaa;
+			}
+			>span:last-child:after{content:none;}
+			span,
+			span a{color:#aaa; letter-spacing:0;}
+		}
+		.jv-single-post-footer .jv-single-post-tags{
+			text-align:center !important;
+			.jv-single-post-tags-item-container>li,
+			.jv-single-post-tags-item a{color:#aaa; letter-spacing:0;}
+		}
+	}
+
+	/*------------------------------------------------------------------
+	[1-2. Archive]
+	*/
+	body.archive&,
+	body.seaerch&,
+	body.tag&{
+		& .archive-header{
+			background:#f8f8f9;
+			padding:50px 0;
+			text-align:center;
+			margin-bottom:70px;
+			h3{
+				font-weight:500;
+				font-size:34px;
+				line-height:44px;
+				margin: 10px 0 15px !important;
+				padding-top:0 !important;
+				text-transform: capitalize;
+				letter-spacing: 0;
+			}
+		}
+		.main-content-wrap{padding-right:50px; flex:0 0 70%;}
+		.sidebar-right{flex:0 0 30%; max-width:30%;}
+	}
+}// .jvbpd-single-post-type-jvd-lp
+
+/*------------------------------------------------------------------
+[2. Type b contents]
+*/
+body.single-post.jvbpd-single-post-type-jvd-lp{
+
+	.author-info {
+		display: flex;
+		-webkit-flex-flow: row nowrap;
+		-moz-flex-flow: row nowrap;
+		-ms-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+		overflow: hidden;
+	    background-color: #f8f8f9;
+		margin-bottom: 60px;
+		padding: 30px 30px 25px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		.author-avatar{
+			-webkit-flex: 0 0 80px;
+			-moz-flex: 0 0 80px;
+			-ms-flex: 0 0 80px;
+			flex: 0 0 80px;
+			margin-right: 30px;
+		}
+		.navigation{
+			.screen-reader-text {
+				height: 1px;
+				overflow: hidden;
+				position: absolute!important;
+				width: 1px;
+			}
+			&.post-navigation .nav-links {
+				display: flex;
+				padding: 25px 0;
+				border-width: 1px 0;
+				border-style: solid;
+			}
+			&.post-navigation .back-to-list,
+			&.post-navigation .nav-next,
+			&.post-navigation .nav-previous {
+				position: relative;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flexbox;
+				display: -ms-flex;
+				display: flex;
+				-webkit-flex-flow: column wrap;
+				-moz-flex-flow: column wrap;
+				-ms-flex-flow: column wrap;
+				flex-flow: column wrap;
+				-webkit-justify-content: center;
+				-moz-justify-content: center;
+				-ms-flex-pack: center;
+				-ms-justify-content: center;
+				justify-content: center;
+				text-decoration: none;
+			}
+			.nav-previous i {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				font-size: 42px;
+			}
+		}
+	}
+}
+
+/* Search */
+#searchform button {
+background:#fff;
+border:1px solid #e4e7ea;
+border-left:0;
+color:#aaa;
+border-radius: 0;
+line-height: 17px;
+padding: 7px 18px;
+}
+
+.searchform input[type=text] {
+width:80% !important;
+    margin-right: 0px !important;
+font-size:13px;
+font-weight:400;
+}
+
+input[type=text], select {
+    height: 33px;
+}
+
+/** Search not found **/
+.error-page-wrap .row .col-md-12 .error-template .error-actions span, #javo-user-404-page-wrap .row .col-md-12 .error-template .error-actions span {color:#aaa !important;}
+.error-page-wrap .row .col-md-12 .error-template h2, #javo-user-404-page-wrap .row .col-md-12 .error-template h2 {
+    color: #858585;  
+}
+
+body.search-no-results .error-page-wrap .row .col-md-12 .error-template, body.search-no-results #javo-user-404-page-wrap .row .col-md-12 .error-template {
+    padding: 0px 15px;
+}
+
+body.search-no-results .error-page-wrap .row .col-md-12 .error-template .error-details p, body.search-no-results #javo-user-404-page-wrap .row .col-md-12 .error-template .error-details p {
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0;
+}
+/** //Search not found **/
+
+.nav-top .horizon.sidebar ul.jvbpd-nav ul.nav.menu-depth-1 {
+    box-shadow: none;
+}
+
+.nav-top .navbar-header .header-content-wrapper.nav.top-menu-wrap li:not(.menu-item-depth-1) > .container ul.jvbpd-nav ul.sub-menu-second.menu-depth-1.nav {
+    border-top: 0px solid #fdc42d;
+    border: 1px solid #eee;
+}
+
+/* @primary: #000; 01bcc3
+
+
+.single-post .comments-area .jv-single-post-comments .jv-single-post-comment-item div.comment {
+  border: 1px solid #ececec;
+}
+
+body.top-nav-type-inline .nav-top.navbar-static-top .navbar-header, body.top-nav-type-inline-clean .nav-top.navbar-static-top .navbar-header, body.top-nav-type-jv-nav-row-2 .nav-top.navbar-static-top .navbar-header, body.top-nav-type-jv-nav-row-2-dark .nav-top.navbar-static-top .navbar-header, body.top-nav-type-jv-nav-row-2-second .nav-top.navbar-static-top .navbar-header {
+    border-bottom: 1px solid #e4e7ea;
+} */

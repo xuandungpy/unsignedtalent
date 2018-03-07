@@ -1,0 +1,41 @@
+.si-icons span {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	margin: 40px 30px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.si-icons-hover span {
+	width: 128px;
+	height: 128px;
+	margin: 50px 40px;
+}
+
+/* Fallback for browsers that don't support SVG - Generated with http://iconizr.com/ */
+
+.no-svg .si-icon-clock { background-image: url('../images/png/clock.png') }
+.no-svg .si-icon-contract { background-image: url('../images/png/contract.png') }
+.no-svg .si-icon-down-arrow { background-image: url('../images/png/down-arrow.png') }
+.no-svg .si-icon-equalizer { background-image: url('../images/png/equalizer.png') }
+.no-svg .si-icon-flag { background-image: url('../images/png/flag.png') }
+.no-svg .si-icon-glass-empty { background-image: url('../images/png/glass.png') }
+.no-svg .si-icon-hamburger, .no-svg .si-icon-hamburger-cross { background-image: url('../images/png/hamburger.png') }
+.no-svg .si-icon-hourglass { background-image: url('../images/png/hourglass.png') }
+.no-svg .si-icon-mail { background-image: url('../images/png/mail.png') }
+.no-svg .si-icon-maximize, .no-svg .si-icon-maximize-rotate { background-image: url('../images/png/maximize.png') }
+.no-svg .si-icon-monitor { background-image: url('../images/png/monitor.png') }
+.no-svg .si-icon-nav-left-arrow { background-image: url('../images/png/nav-left-arrow.png') }
+.no-svg .si-icon-nav-up-arrow { background-image: url('../images/png/nav-up-arrow.png') }
+.no-svg .si-icon-lock { background-image: url('../images/png/padlock.png') }
+.no-svg .si-icon-play { background-image: url('../images/png/play.png') }
+.no-svg .si-icon-plus, .no-svg .si-icon-plus-cross { background-image: url('../images/png/plus.png') }
+.no-svg .si-icon-right-arrow { background-image: url('../images/png/right-arrow.png') }
+.no-svg .si-icon-smiley { background-image: url('../images/png/smiley.png') }
+.no-svg .si-icon-trash { background-image: url('../images/png/trash.png') }
+.no-svg .si-icon-volume { background-image: url('../images/png/volume.png') }
+.no-svg .si-icon-zoom { background-image: url('../images/png/zoom.png') }
+
+/* alternatively you can define that there is no background image when SVG is supported instead of using .no-svg */

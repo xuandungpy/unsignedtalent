@@ -1,0 +1,304 @@
+/*------------------------------------------------------------------
+[01. Mixin]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	06/21/17 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Mixin
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. By font size
+2. Link
+	2-1. Top & Sidebar
+	2-2. Posts
+	2-3. Card
+	2-4. Default border
+3. Fonts
+	3-1. Magazine fonts
+*/
+
+/*------------------------------------------------------------------
+[1. Font size]
+*/
+
+font-size:13px;
+@font-weight:400;
+@line-height:1.5;
+@letter-spacing:1px;
+
+@font-weight-th1:400;
+@font-weight-th2:500;
+
+
+.xs-fonts {
+	font-size:11px;
+	font-weight:@font-weight;
+	line-height:@line-height;
+	letter-spacing:@letter-spacing;
+}
+
+.sm-fonts {
+	font-size:12px;
+	font-weight:@font-weight;
+	line-height:@line-height;
+	letter-spacing:@letter-spacing;
+}
+
+.sm-fonts-2 {
+	font-size:12px;
+	font-weight:@font-weight-th1;
+	line-height:@line-height;
+	letter-spacing:@letter-spacing;
+}
+
+.md-fonts {
+	font-size:13px;
+	font-weight:@font-weight;
+	line-height:@line-height;
+	letter-spacing:@letter-spacing;
+}
+
+.md-fonts-th1 {
+	font-size:13px;
+	font-weight:@font-weight-th2;
+	line-height:@line-height;
+	letter-spacing:@letter-spacing;
+}
+
+
+.lg-fonts {
+	font-size:14px;
+	font-weight:@font-weight-th2;
+	line-height:@line-height;
+	letter-spacing:@letter-spacing;
+}
+
+
+.xl-fonts {
+	font-size:1.8rem;
+	font-weight:@font-weight-th2;
+	line-height:@line-height;
+	letter-spacing:@letter-spacing;
+}
+
+.shortcode-title-fonts {
+	font-size:16px;
+	font-weight:600;
+}
+
+
+/*------------------------------------------------------------------
+[2. Links ]
+*/
+.link-fonts-color {
+	color:@bp-color;
+}
+
+.link-fonts-hover-easing {
+	-webkit-transition: color .3s ease-in-out;
+	-moz-transition: color .3s ease-in-out;
+	-ms-transition: color .3s ease-in-out;
+	-o-transition: color .3s ease-in-out;
+	transition: color .3s ease-in-out;
+}
+
+
+
+/*------------------------------------------------------------------
+[2. Buttons ]
+*/
+
+.btn-sm-light-dark {  // activity buttons
+	color: @bp-link-color;
+	border: 1px solid @light-blue-dark;
+	background:#fff;
+    font-size: 11px;
+    padding: 2px 6px;
+	span { background:transparent; color: @bp-color;}
+	&:hover {
+		color: #ffffff;
+		border: 1px solid #000000;
+		font-size: 11px;
+		padding: 2px 6px;
+		background: #000;
+	}
+}
+
+
+
+/*------------------------------------------------------------------
+[2. Common Parts ]
+*/
+
+.widget-bp-fitlers {
+
+}
+
+.tab-sub-nav {
+	.md-fonts;
+}
+
+.top-nav-main {
+	.sm-fonts;
+	color:#565656;
+	font-weight:500;
+}
+
+
+
+/** BP **/
+.generic-button, button, input[type=submit], input[type=button] {
+	.btn;
+	.btn-primary;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 13px;
+	letter-spacing:1px;
+	a {color:@white;}
+	&#searchsubmit{
+		padding: 0.9rem 1.2rem;
+	}
+}
+
+input[type=text], select {
+.form-control;
+}
+.count {.badge;}
+.count {.badge-info;}
+
+
+
+#message.info, #buddypress #buddypress-inner p.warning, #message.updated {
+	.alert;
+	.alert-success;
+	padding:10px 15px;
+}
+
+
+	img.avatar {
+			border-radius:50%;
+			border: 3px #fff solid;
+			box-shadow: 1px 1px 2px rgba(0,0,0,0.08);
+			content:none;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			-ms-transition: all 0.3s;
+			-o-transition: all 0.3s;
+			transition: all 0.3s;
+			&:hover{
+
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			transform: scale(1.1);
+
+		}
+	}
+
+
+
+/** Lava **/
+.lava-action a {
+	color: @bp-link-color;
+	border: 1px solid @light-blue-dark;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 0px 6px;
+   margin:0;
+    display: inline-block;
+
+}
+
+
+
+@search-input-width:800px;
+
+#navigation-bar {
+    position: relative;
+    height: 60px;
+
+	#searchform {
+		position: absolute;
+		top: 0;
+		right: -50px;
+		width: 60px;
+		height: 60px;
+		#label {
+			width: 60px;
+			height: 60px;
+			position: relative;
+			z-index: 20;
+			label {
+				display: block;
+				width: 60px;
+				height: 60px;
+				background: url("http://callmenick.com/_development/expanding-search-bar/img/search.png") 0 0;
+				font-size: 0;
+				color: rgba(0, 0, 0, 0);
+				text-indent: -9999px;
+				cursor: pointer;
+				&:hover {
+					background: url("http://callmenick.com/_development/expanding-search-bar/img/search.png") -60px 0
+				}
+			}
+		&.active label {
+			background: url("http://callmenick.com/_development/expanding-search-bar/img/search.png") -60px 0
+		}
+		}
+
+	}
+
+		#input {
+			position: absolute;
+			top: 0;
+			right: 60px;
+			width: @search-input-width;
+			height: 60px;
+			z-index: 5;
+			overflow: hidden;
+			input {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: -@search-input-width;
+				width: @search-input-width;
+				height: 100%;
+				margin: 0;
+				padding: 0 10px;
+				border: none;
+				background-color: #23688b;
+				color: #fff;
+				font-size: 18px;
+				backface-visibility: none;
+				border-radius: 0;
+				transition: left 0;
+				&:focus {
+					outline: none
+				}
+				&.focus {
+					z-index: 20
+				}
+			}
+		}
+
+		#input.focus {
+			z-index: 20
+		}
+		#input.focus input {
+			left: 0;
+			transition: left 0.3s;
+		}
+}
+
+
+.bbp-template-notice.error{
+	.alert;
+	.alert-danger;
+}

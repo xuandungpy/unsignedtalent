@@ -1,0 +1,78 @@
+/*------------------------------------------------------------------
+[Form]
+
+Project:	Javo Themes
+Version:	1.0
+Last change:	06/04/17 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Form LESS
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Search form
+
+*/
+
+/*------1. Search Form------*/
+.app-search {
+    position: relative;
+    margin: 0px;
+}
+
+.app-search a {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: @inverse;
+}
+
+.app-search .form-control,
+.app-search .form-control:focus {
+    border: 1px solid @card-shawdow-light;
+    font-size: 13px;
+    color: @inverse;
+    padding-left: 20px;
+    padding-right: 40px;
+    background: @white;
+    box-shadow: none;
+    height: 30px;
+    font-weight: 300;
+    width: 380px;
+    display: inline-block;
+    line-height: 30px;
+    border-radius: 40px;
+    transition: 0.5s ease-out;
+}
+
+.app-search .form-control::-moz-placeholder {
+    color: @inverse;
+    opacity: 0.5;
+}
+
+.app-search .form-control::-webkit-input-placeholder {
+    color: @inverse;
+    opacity: 0.5;
+}
+
+.app-search .form-control::-ms-placeholder {
+    color: @inverse;
+    opacity: 0.5;
+}
+
+@media(min-width:1024px) {
+	.app-search .form-control:focus{
+		width: 500px;
+	}
+}
+
+/*------2. Dropdown ------*/
+//selectpicker
+.btn-group.bootstrap-select.show-tick button {
+	padding:0 25px 0 0;
+	span.bs-caret {
+		padding:18px 0 0 0 !important;
+		display:inline-block !important;
+	}
+}

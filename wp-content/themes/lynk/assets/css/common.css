@@ -1,0 +1,177 @@
+/*------------------------------------------------------------------
+[11. Comment Stylesheet]
+Project:	Javo Themes
+Version:	1.0
+Last change:	09/07/15 [Organize CSS Structure]
+Assigned to:	Javo
+Primary use:	Comment Style in Post, Page, Custom Post
+-------------------------------------------------------------------*/
+body{overflow-y:scroll;}
+
+
+/* =WordPress Core : It's WordPress default CSS.
+-------------------------------------------------------------- */
+.commentlist .bypostauthor{padding:0;}
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    max-width: 96%; /* Image does not overflow the content area */
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+.jvbpd-carousel{
+	padding:0;
+}
+
+.jvbpd-carousel-container{
+	position:relative;
+	overflow:hidden;
+}
+
+.carousel-arrow .carousel-prev, .carousel-arrow .carousel-next{
+	position: absolute;
+	width: 35px;
+	height: 75px;
+	line-height:75px;
+	background-color: rgba( 0, 0, 0, .5 );
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	-ms-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+
+.carousel-arrow .carousel-prev{
+	left: -35px;
+	top: 44%;
+	margin-top: -33px;
+	border-radius: 3px;
+	transition:left .5s;
+	-webkit-transition:left .5s;
+}
+
+.carousel-arrow .carousel-next{
+	right: -35px;
+	top: 44%;
+	margin-top: -33px;
+	border-radius: 3px;
+	transition:right .5s;
+	-webkit-transition:right .5s;
+}
+
+.jvbpd-carousel-container:hover .carousel-arrow .carousel-prev{
+	left:0;
+}
+
+.jvbpd-carousel-container:hover .carousel-arrow .carousel-next{
+	right:0;
+}
+.sidebar.vertical-sidebar.left-sidebar >.sidebar-nav .left-sidebar-brand .logo-small-img{display:none;}
+html body.top-nav-type-dashboard-style .nav-top.navbar-static-top .navbar-header a.dashboard-topbar-switcher span{ color:#fff; }
+
+/* WordPress default css ( Monster widget compatibility ) */
+.widgets-wraps .tagcloud a{
+	padding: 0 3px;
+    margin-bottom: 2px;
+	    line-height: 30px;
+}
